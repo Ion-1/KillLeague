@@ -1,0 +1,16 @@
+[package]
+name = "KillLeague"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+qmetaobject = "0.2.10"
+sysinfo = "0.35.2"
+
+[profile.release]
+# https://github.com/johnthagen/min-sized-rust
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
