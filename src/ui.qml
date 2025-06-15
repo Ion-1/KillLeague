@@ -14,7 +14,7 @@ Window {
         anchors.fill: parent
 
         Button {
-            text: qsTr("Murder League")
+            text: qsTr("Kill League")
             onClicked: Backend.kill_league()
             Layout.fillWidth: true
             Layout.fillHeight: true
